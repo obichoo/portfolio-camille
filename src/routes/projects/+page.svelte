@@ -5,5 +5,5 @@
 </script>
 
 <div>
-    <p>test</p>
+    <p>test projects</p>
 </div>

@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Ollie (2024)",
+    "content": "Ollie offre une expérience utilisateur exceptionnelle avec un design épuré. Notre application propose un vaste catalogue de skateboards ainsi que des outils de personnalisation avancés permettant de créer des planches uniques et sur mesure.",
+    "images": []
+  },
+  {
+    "title": "Begin (2023)",
+    "content": "Cette interface accompagne les 15-25 ans dans leur parcours éducatif et professionnel, à développer des compétences, et à trouver des emplois ou stages et aide les professionnels à recruter et former de jeunes talents.",
+    "images": []
+  },
+  {
+    "title": "Mubi (2023)",
+    "content": "Une campagne publicitaire pour une plateforme de streaming qui valorise les utilisateurs, brise les stéréotypes des films d'auteur, et invite de nouveaux membres à rejoindre une communauté cinématographique active.",
+    "images": []
+  },
+  {
+    "title": "Cabasse (2022)",
+    "content": "Une stratégie commerciale visant à moderniser et diversifier la marque historique en élargissant sa cible, notamment vers les jeunes, et en mettant en avant la qualité sonore et le savoir-faire artisanal, tout en évoluant dans le domaine du streaming multiroom.",
+    "images": [],
+    "extra": {
+      "title": "Analyse brief client",
+      "items" : [
+        "Marque historique.",
+        "Volonté de faire évoluer la marque touchant plus de cibles telles que les jeunes et pas seulement que les connaisseurs de la marque.",
+        "Souhaite évoluer dans le monde sur du streaming-multiroom.",
+        "Mettre en avant la qualité des produits et du savoir-faire d’objet connecté à la culture artisanale Cabasse."
+      ]
+    }
+  },
+  {
+    "title": "3S (2022)",
+    "content": "Le projet \"3S\" est une plateforme de e-commerce spécialisée dans les sneakers Stan-Smith, offrant aux utilisateurs un moyen rapide et simple de trouver et d'acheter les modèles tendance grâce à une procédure d'achat en un clic. La plateforme vise à économiser du temps pour les utilisateurs tout en garantissant une expérience d'achat efficace et fiable.",
+    "images": []
+  }
+]

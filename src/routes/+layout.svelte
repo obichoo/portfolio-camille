@@ -2,53 +2,42 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '$lib/fonts.css';
+	import {Router, Route} from "svelte-routing";
+	import Home from "./+page.svelte";
+	import About from "./about/+page.svelte";
+	import Projects from "./projects/+page.svelte";
+	import Contact from "./contact/+page.svelte";
+	import {theme} from "$lib/stores/theme.ts";
+	import {onDestroy} from "svelte";
+
+	let currentTheme = 'white';
+	const unsubscribe = theme.subscribe(value => {
+		currentTheme = value;
+	});
+	onDestroy(() => {
+		unsubscribe();
+	});
+
+	export let url = "";
 </script>
 
-<div class="app">
-	<Header />
+<Router {url}>
+	<div
+		class="app transition-all duration-500 flex flex-col min-h-screen py-11"
+		class:theme-white={currentTheme == 'white'}
+		class:theme-black={currentTheme == 'black'}
+		class:bg-white={currentTheme == 'white'}
+		class:bg-black={currentTheme == 'black'}
+	>
+		<Header/>
 
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
-</div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
+		<div>
+			<Route path="/">
+				<Home/>
+			</Route>
+			<Route path="/projects" component={Projects}/>
+			<Route path="/about" component={About}/>
+			<Route path="/contact" component={Contact}/>
+		</div>
+	</div>
+</Router>
