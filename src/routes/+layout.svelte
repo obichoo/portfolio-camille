@@ -6,6 +6,7 @@
 	import Home from "./+page.svelte";
 	import About from "./about/+page.svelte";
 	import Projects from "./projects/+page.svelte";
+	import Project from "./projects/[slug]/+page.svelte";
 	import Contact from "./contact/+page.svelte";
 	import {theme} from "$lib/stores/theme.ts";
 	import {onDestroy} from "svelte";
@@ -36,6 +37,7 @@
 				<Home/>
 			</Route>
 			<Route path="/projects" component={Projects}/>
+			<Route path="/projects/*" component={Project}/>
 			<Route path="/about" component={About}/>
 			<Route path="/contact" component={Contact}/>
 		</div>

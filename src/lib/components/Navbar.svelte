@@ -30,12 +30,14 @@
         class:bg-black={currentTheme === 'black'}
     >
         <div class="flex justify-between">
-            <p
-                class="text-base font-bold text-left text-black tracking-tighter"
-                class:text-white={currentTheme === 'black'}
-            >
-                UI/UX DESIGNER
-            </p>
+            <Link to="/">
+                <p
+                    class="text-base font-bold text-left text-black tracking-tighter"
+                    class:text-white={currentTheme === 'black'}
+                >
+                    UI/UX DESIGNER
+                </p>
+            </Link>
             {#if showMenu}
                 <div on:click={toggleMenu}>
                     <Icon
