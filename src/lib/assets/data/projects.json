@@ -2,28 +2,31 @@
   {
     "title": "Ollie (2024)",
     "content": "Ollie offre une expérience utilisateur exceptionnelle avec un design épuré. Notre application propose un vaste catalogue de skateboards ainsi que des outils de personnalisation avancés permettant de créer des planches uniques et sur mesure.",
-    "images": [],
+    "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg"],
     "preview": "/images/ollie/preview.png",
-    "name": "ollie"
+    "name": "ollie",
+    "video": "/videos/ollie.mov"
   },
   {
     "title": "Begin (2023)",
     "content": "Cette interface accompagne les 15-25 ans dans leur parcours éducatif et professionnel, à développer des compétences, et à trouver des emplois ou stages et aide les professionnels à recruter et former de jeunes talents.",
-    "images": [],
+    "images": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png",
+    "13.png", "14.png", "15.png", "16.png", "17.png", "18.png", "19.png", "20.png", "21.png",
+      "22.png"],
     "preview": "/images/begin/preview.png",
     "name": "begin"
   },
   {
     "title": "Mubi (2023)",
     "content": "Une campagne publicitaire pour une plateforme de streaming qui valorise les utilisateurs, brise les stéréotypes des films d'auteur, et invite de nouveaux membres à rejoindre une communauté cinématographique active.",
-    "images": [],
+    "images": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png"],
     "preview": "/images/mubi/preview.png",
     "name": "mubi"
   },
   {
     "title": "Cabasse (2022)",
     "content": "Une stratégie commerciale visant à moderniser et diversifier la marque historique en élargissant sa cible, notamment vers les jeunes, et en mettant en avant la qualité sonore et le savoir-faire artisanal, tout en évoluant dans le domaine du streaming multiroom.",
-    "images": [],
+    "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg", "15.jpeg", "16.jpeg", "17.jpeg", "18.jpeg"],
     "preview": "/images/cabasse/preview.png",
     "name": "cabasse",
     "extra": {
@@ -39,7 +42,9 @@
   {
     "title": "3S (2022)",
     "content": "Le projet \"3S\" est une plateforme de e-commerce spécialisée dans les sneakers Stan-Smith, offrant aux utilisateurs un moyen rapide et simple de trouver et d'acheter les modèles tendance grâce à une procédure d'achat en un clic. La plateforme vise à économiser du temps pour les utilisateurs tout en garantissant une expérience d'achat efficace et fiable.",
-    "images": [],
+    "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg", "15.jpeg", "16.jpeg", "17.jpeg", "18.jpeg",
+    "19.jpeg", "20.jpeg", "21.jpeg", "22.jpeg", "23.jpeg", "24.jpeg", "25.jpeg", "26.jpeg", "27.jpeg", "28.jpeg", "29.jpeg", "30.jpeg", "31.jpeg",
+      "32.jpeg"],
     "preview": "/images/3s/preview.png",
     "name": "3s"
   }

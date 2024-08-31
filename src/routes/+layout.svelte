@@ -7,7 +7,6 @@
 	import About from "./about/+page.svelte";
 	import Projects from "./projects/+page.svelte";
 	import Project from "./projects/[slug]/+page.svelte";
-	import Contact from "./contact/+page.svelte";
 	import {theme} from "$lib/stores/theme.ts";
 	import {onDestroy} from "svelte";
 
@@ -24,7 +23,7 @@
 
 <Router {url}>
 	<div
-		class="app transition-all duration-500 flex flex-col min-h-screen py-11"
+		class="app transition-all duration-500 flex flex-col min-h-screen pt-11"
 		class:theme-white={currentTheme == 'white'}
 		class:theme-black={currentTheme == 'black'}
 		class:bg-white={currentTheme == 'white'}
@@ -36,10 +35,11 @@
 			<Route path="/">
 				<Home/>
 			</Route>
+
+			<Route path="/home" component={Home} />
 			<Route path="/projects" component={Projects}/>
 			<Route path="/projects/*" component={Project}/>
 			<Route path="/about" component={About}/>
-			<Route path="/contact" component={Contact}/>
 		</div>
 	</div>
 </Router>

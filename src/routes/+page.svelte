@@ -10,8 +10,22 @@
     import Text from "$lib/components/Text.svelte";
     import Mail from "$lib/images/mail.svg";
     import LinkedIn from "$lib/images/linkedin.svg";
+    import {onMount} from "svelte";
 
     theme.set('white');
+
+    function scrollToContact() {
+        document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
+    }
+
+    onMount(() => {
+        setTimeout(() => {
+            if (window.location.href.includes('#contact')) {
+                scrollToContact();
+            }
+        }, 300)
+    });
+
 </script>
 
 <main>
@@ -36,7 +50,8 @@
             </div>
         {/each}
     </section>
-    <section class="px-5 pt-8 pb-1">
+
+    <section id="contact" class="px-5 pt-8 pb-10">
         <h1 class="text-2xl mb-6">Contact</h1>
 
         <Text>

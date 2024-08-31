@@ -5,6 +5,7 @@
     import { onDestroy } from 'svelte';
     import {Router, Link} from "svelte-routing";
     import { default as routes} from "$lib/assets/data/routes.json";
+    import {goto} from "$app/navigation";
 
     let showMenu = false;
     let currentTheme: 'white' | 'black' = 'white';
