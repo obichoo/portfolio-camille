@@ -11,6 +11,8 @@
     import Mail from "$lib/images/mail.svg";
     import LinkedIn from "$lib/images/linkedin.svg";
     import {onMount} from "svelte";
+    import {goto} from "$app/navigation";
+    import {Link} from "svelte-routing";
 
     theme.set('white');
 
@@ -34,9 +36,11 @@
         <Image src={Photo} class="w-full h-80 mb-8"></Image>
         <Title className="mb-3">Hello, je suis <span class="text-c-blue">Camille</span> </Title>
         <Subtitle class="mb-8">Une UX/UI designer, créative et pleine d'énergie, avec une petite touche parisienne.</Subtitle>
-        <Button>
-            À propos de moi
-        </Button>
+        <Link to="/about">
+            <Button>
+                À propos de moi
+            </Button>
+        </Link>
     </section>
     <section class="bg-black px-5 pt-8 pb-1">
         <h1 class="text-2xl mb-8 text-white">Quelques projets</h1>
