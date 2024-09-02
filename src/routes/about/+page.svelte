@@ -8,7 +8,7 @@
     theme.set('white');
 </script>
 
-<section class="px-5 lg:px-[70px] py-8 lg:bg-black lg:text-white">
+<section class="px-5 lg:px-[70px] pb-8 lg:bg-black lg:text-white">
     <hr class="my-8 lg:hidden">
     <Title className="mb-4 lg:pt-[260px] lg:text-white lg:text-center lg:leading-normal">À propos de moi</Title>
 
