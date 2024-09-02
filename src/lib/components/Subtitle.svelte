@@ -18,7 +18,7 @@
 <h2
     class:text-black={currentTheme === 'white'}
     class:text-white={currentTheme === 'black'}
-    class={className + " font-avenir font-medium text-sm tracking-wide"}
+    class={className + " font-avenir font-medium text-sm tracking-wide lg:text-[40px] lg:leading-[50px]"}
 >
     <slot />
 </h2>

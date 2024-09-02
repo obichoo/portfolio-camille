@@ -10,24 +10,41 @@
 </script>
 
 <main class="mt-8">
-    <section class="mb-5 px-5">
-        <Title className="mb-8">Mes projets</Title>
-        <Text className="text-white">
+    <section class="mb-5 px-5 lg:px-[70px]">
+        <Title className="mb-8 lg:mt-80 lg:text-center lg:leading-normal">Mes projets</Title>
+        <Text className="text-white lg:hidden">
             Bienvenue sur la page de mes projets !
             Vous trouverez ici une sélection de mes travaux récents,
             mettant en avant mes compétences en UX/UI design.
         </Text>
-        <Text className="text-white mb-8">
+        <Text className="text-white mb-8 lg:hidden">
             Chaque projet reflète mon engagement envers la qualité,
             l’innovation et la satisfaction utilisateur.
         </Text>
 
-        {#each projects as project}
-            <div class="mb-8">
+        <Text className="text-white text-center hidden lg:block lg:mb-80">
+            Bienvenue sur la page de mes projets !
+            Vous trouverez ici une sélection de mes travaux récents,
+            mettant en avant mes compétences en UX/UI design.
+            Chaque projet reflète mon engagement envers la qualité,
+            l’innovation et la satisfaction utilisateur.
+        </Text>
+
+        {#each projects as project, i}
+            <div class="mb-8 lg:mb-16">
                 <Link to={`/projects/${project.name}`}>
-                    <ProjectPreviewCard imgPreviewSrc={project.preview}>
-                        <span slot="title">{project.title}</span>
-                    </ProjectPreviewCard>
+                    <div class="hidden lg:block">
+                        <ProjectPreviewCard imgSide={i % 2 === 1 ? 'left' : 'right'} imgPreviewSrc={project.preview}>
+                            <span slot="title">{project.title}</span>
+                            <span slot="content">{project.content}</span>
+                        </ProjectPreviewCard>
+                    </div>
+
+                    <div class="lg:hidden block">
+                        <ProjectPreviewCard imgPreviewSrc={project.preview}>
+                            <span slot="title">{project.title}</span>
+                        </ProjectPreviewCard>
+                    </div>
                 </Link>
             </div>
         {/each}

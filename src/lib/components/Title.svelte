@@ -18,7 +18,7 @@
 <h1
     class:text-black={currentTheme === 'white'}
     class:text-white={currentTheme === 'black'}
-    class={className + " font-rufina font-bold font text-left text-3xl tracking-wide"}
+    class={className + " font-rufina font-bold font text-left text-3xl tracking-wide lg:text-[64px]"}
 >
     <slot />
 </h1>

@@ -24,9 +24,18 @@
 </script>
 
 <main class="mt-8">
-    <section class="mb-5 px-5">
+    <section class="mb-5 px-5 lg:px-[70px]">
         {#if project}
-            <div class="flex">
+            <Link to="/projects">
+                <div class="hidden lg:flex lg:items-center lg:pt-10">
+                    <img class="lg:h-5" src={ChevronBack} alt="">
+
+                    <Title className="capitalize lg:text-sm lg:font-avenir lg:ml-2">
+                        Retour
+                    </Title>
+                </div>
+            </Link>
+            <div class="flex lg:hidden">
                 <Link to="/projects">
                     <img src={ChevronBack} alt="">
                 </Link>
@@ -35,15 +44,23 @@
                 </Title>
             </div>
 
-            <div class="pt-8">
-                <Text className="text-white">
+            <div class="hidden lg:block text-white leading-none capitalize font-rufina text-center mt-[180px] text-[64px]">
+                {project.name}
+            </div>
+
+            <div class="hidden lg:block text-[#3221DF] text-2xl text-center mt-6">
+                {project.date}
+            </div>
+
+            <div class="pt-8 lg:pt-6 lg:mb-[180px]">
+                <Text className="text-white lg:text-center">
                     {project.content}
                 </Text>
             </div>
 
             {#if project.extra}
-                <hr class="my-8">
-                <div class="text-white">
+                <hr class="my-8 lg:hidden">
+                <div class="text-white lg:hidden">
                     <p class="font-bold text-center mb-8">{project.extra.title}</p>
                     <ul class="mx-4">
                         {#each project.extra.items as item}
@@ -55,7 +72,7 @@
 
             <div>
                 {#each project.images as image}
-                    <img class="w-full rounded-xl mt-5" src={'/images/' + project.name + '/' + image} alt="">
+                    <img class="w-full rounded-xl mt-5 lg:mb-16 lg:mb-0" src={'/images/' + project.name + '/' + image} alt="">
                 {/each}
                 <img src="" alt="">
             </div>
@@ -64,16 +81,16 @@
                 <video class="w-full rounded-xl mt-5" controls src={project.video}></video>
             {/if}
         {:else}
-            <div class="flex">
-                <Link to="/projects">
-                    <img src={ChevronBack} alt="">
-                </Link>
-                <Title className="capitalize">
-                    Retour
-                </Title>
-            </div>
+            <Link to="/projects">
+                <div class="flex lg:items-center lg:pt-10">
+                    <img class="lg:h-5" src={ChevronBack} alt="">
+                    <Title className="capitalize lg:text-sm lg:font-avenir lg:ml-2">
+                        Retour
+                    </Title>
+                </div>
+            </Link>
             <div>
-                <Text className="text-white text-center mt-8">Ce projet n'existe pas.</Text>
+                <Text className="text-white text-center mt-8 lg:text-2xl lg:mt-40">Ce projet n'existe pas.</Text>
             </div>
         {/if}
     </section>

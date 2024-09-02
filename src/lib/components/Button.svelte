@@ -20,7 +20,7 @@
 <button
     type="button"
     on:click={() => onClick()}
-    class={'p-4 text-sm bg-black text-white rounded-[5px] ' + className}
+    class={'p-4 text-sm bg-black text-white rounded-[5px] lg:text-xl ' + className}
     class:border-white={currentTheme === 'black'}
     class:border={currentTheme === 'black'}
 >

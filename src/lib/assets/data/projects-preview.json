@@ -2,16 +2,16 @@
   {
     "title": "Mubi",
     "content": "Une campagne publicitaire pour une plateforme de streaming qui valorise les utilisateurs, brise les stéréotypes des films d'auteur, et invite de nouveaux membres à rejoindre une communauté cinématographique active.",
-    "image": "mubi.jpg"
+    "image": "/images/mubi/preview.png"
   },
   {
     "title": "Begin",
     "content": "Cette interface accompagne les 15-25 ans dans leur parcours éducatif et professionnel, à développer des compétences, et à trouver des emplois ou stages et aide les professionnels à recruter et former de jeunes talents.",
-    "image": "begin.jpg"
+    "image": "/images/begin/preview.png"
   },
   {
     "title": "Ollie",
     "content": "Ollie offre une expérience utilisateur exceptionnelle avec un design épuré. Notre application propose un vaste catalogue de skateboards ainsi que des outils de personnalisation avancés permettant de créer des planches uniques et sur mesure.",
-    "image": "ollie.jpg"
+    "image": "/images/ollie/preview.png"
   }
 ]

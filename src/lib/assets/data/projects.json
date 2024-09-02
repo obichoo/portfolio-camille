@@ -5,7 +5,8 @@
     "images": ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg", "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg"],
     "preview": "/images/ollie/preview.png",
     "name": "ollie",
-    "video": "/videos/ollie.mov"
+    "video": "/videos/ollie.mov",
+    "date": "23/02/2024"
   },
   {
     "title": "Begin (2023)",
@@ -14,14 +15,16 @@
     "13.png", "14.png", "15.png", "16.png", "17.png", "18.png", "19.png", "20.png", "21.png",
       "22.png"],
     "preview": "/images/begin/preview.png",
-    "name": "begin"
+    "name": "begin",
+    "date": "22/09/2023"
   },
   {
     "title": "Mubi (2023)",
     "content": "Une campagne publicitaire pour une plateforme de streaming qui valorise les utilisateurs, brise les stéréotypes des films d'auteur, et invite de nouveaux membres à rejoindre une communauté cinématographique active.",
     "images": ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png"],
     "preview": "/images/mubi/preview.png",
-    "name": "mubi"
+    "name": "mubi",
+    "date": "02/11/2023"
   },
   {
     "title": "Cabasse (2022)",
@@ -37,7 +40,8 @@
         "Souhaite évoluer dans le monde sur du streaming-multiroom.",
         "Mettre en avant la qualité des produits et du savoir-faire d’objet connecté à la culture artisanale Cabasse."
       ]
-    }
+    },
+    "date": "08/12/2022"
   },
   {
     "title": "3S (2022)",
@@ -46,6 +50,7 @@
     "19.jpeg", "20.jpeg", "21.jpeg", "22.jpeg", "23.jpeg", "24.jpeg", "25.jpeg", "26.jpeg", "27.jpeg", "28.jpeg", "29.jpeg", "30.jpeg", "31.jpeg",
       "32.jpeg"],
     "preview": "/images/3s/preview.png",
-    "name": "3s"
+    "name": "3s",
+    "date": "11/07/2022"
   }
 ]

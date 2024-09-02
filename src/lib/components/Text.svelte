@@ -4,6 +4,6 @@
     export {className}
 </script>
 
-<p class={className + " font-avenir text-sm font-medium leading-5 tracking-wide"}>
+<p class={className + " font-avenir text-sm lg:text-xl font-medium leading-5 tracking-wide"}>
     <slot />
 </p>
